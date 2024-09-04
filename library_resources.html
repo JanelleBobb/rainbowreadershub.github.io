@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<title>Rainbow Readers'Book Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Janelle Bobb" content="Library Book Hub">
+<meta name="keywords" content="education, business, cookbook, language, religion, novels">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+div.title{
+  font-family: "Sofia", sans-serif;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+background-color: white;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+
+left:25%;
+
+   
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+#logo {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url('shapes_image(1).png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+#space {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+} 
+
+#myfont{
+  font-size:80px;
+}
+
+#bgmain {
+  width:500px;
+  padding:15px;
+  background-color:white;
+  outline: 5px inset pink;
+}
+h3.hborder{
+  border-style: inset;
+  width:100%;
+  padding:15px;
+  background-color:white;
+  outline: 5px;
+align:center;
+
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--Logo for JCN Library-->
+<div class="w3-container w3-orange">
+<img src="apple_logo.jpg" alt="Logo" width="200" height="200" id= "logo">
+  <h1 align="center" style="font-size:60px"><b>Rainbow Readers'Book Hub</b></h1>
+</div>
+
+
+ <!--Start Content -->
+
+<div class=w3-content">
+<div class="title">
+<!--Navigation Bar -->
+<div class="w3-bar w3-border w3-orange">
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-indigo">Home</a>
+  <a href="about_us.html" class="w3-bar-item w3-button w3-hover-green">About Us</a>
+  <a href="library_resources.html" class="w3-bar-item w3-button w3-hover-blue">Resources</a>
+  <a href="library_membership.html" class="w3-bar-item w3-button w3-hover-teal">Membership</a>
+  <a href="library_fees.html" class="w3-bar-item w3-button w3-hover-aqua">Library Fees</a>
+  <a href="library_contact.html" class="w3-bar-item w3-button w3-hover-deep-orange">Contact Us</a>
+</div></div></div>
+
+<p>Click on the image to return Home<a href="index.html"><i class="fa fa-home" style="font-size:60px; color: red;"></i></a></p>
+
+
+
+<div class="center">
+<a href="#edu"><button class="button">Education</button><a/>
+<a href="#lang"><button class="button">Language</button><a/>
+<a href="#recipe"><button class="button">Recipe</button><a/>
+<a href="#nov"><button class="button">Novels</button><a/>
+<a href="#business"><button class="button">Business</button><a/>
+<a href="#religion"><button class="button">Religion</button><a/>
+</div>
+
+<br><br>
+
+
+
+<!--Using Card-->
+<!--Educational Books-->
+
+<div id="edu">
+<h3 id="myfont" class="hborder"><center id="main"><b>Education</b></center></h3>
+</div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+  <div class="gallery">
+    <a target="_blank" href="physics.jpg">
+      <img src="images/education/physics.jpg" alt="Physics" width="600" height="400">
+    </a> 
+    <div class="desc">Available</div>
+ </div>
+</div>
+</div> 
+
+<div class="column">
+<div class="card">
+  <div class="gallery">
+    <a target="_blank" href="probability_and_stats_1.jpg">
+      <img src="images/education/probability_and_stats_1.jpg" alt="Complete Probability and Statistics Vol 1" width="600" height="400">
+    </a>
+      <div class="desc">Available</div>  
+  </div> 
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+    <a target="_blank" href="probability_and_stats_2.jpg">
+      <img src="images/education/probability_and_stats_2.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+   <div class="desc">Coming Soon</div>
+  </div>
+</div> 
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="pure_maths.jpg">
+      <img src="images/education/pure_maths.jpg" alt="Pure Maths" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="life_span_development.jpg">
+      <img src="images/education/life_span_development.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+   <div class="desc">Unavailable</div>
+
+</div>
+</div>
+</div>
+ 
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="communicating_effectively.jpg">
+      <img src="images/education/communicating_effectively.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+   <div class="desc">Unavailable</div>
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="better_english_grammar.jpg">
+      <img src="images/education/better_english_grammar.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+   <div class="desc">Unavailable</div>
+
+</div>
+</div>
+</div>
+ 
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="java.jpg">
+      <img src="images/education/java.jpg" alt="Introduction to JAVA Programming" width="600" height="400">
+    </a>
+  <div class="desc">Available</div>
+ 
+</div>
+</div>
+</div>
+
+</div> <!--end of row-->
+
+<div class="clearfix"></div>
+<br><br>
+
+
+<!--Language Books-->
+<div id="lang">
+<h3 id="myfont" class="hborder"><center><b>Language</b></center></h3>
+</div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="french_learners.jpg">
+      <img src="images/language/french_learners.jpg" alt="French Readers" width="600" height="400">
+    </a>
+    <div class="desc">Unavailable</div>
+ 
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="language(1).jpg">
+      <img src="images/language/language(1).jpg" alt="Spanish Novel (1)" width="600" height="400">
+    </a>
+    <div class="desc">Unavailable</div>
+ 
+</div>
+</div>
+</div>
+ 
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="language(2).jpg">
+      <img src="images/language/language(2).jpg" alt="Spanish Novel (2)" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="learners_spanish.jpg">
+      <img src="images/language/learners_spanish.jpg" alt="Spanish" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="school_spanish_course.jpg">
+      <img src="images/language/school_spanish_course.jpg" alt="School Spanish Course" width="600" height="400">
+    </a>
+  <div class="desc">Available</div> 
+</div>
+</div>
+</div>
+ 
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="spanish_made_simple.jpg">
+      <img src="images/language/spanish_made_simple.jpg" alt="Spanish Made Simple" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="viva1.jpg">
+      <img src="images/language/viva1.jpg" alt="Viva" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="viva2.jpg">
+      <img src="images/language/viva2.jpg" alt="Viva 2" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+
+<!--Cook Books-->
+<div id="recipe">
+<h3 id="myfont" class="hborder"><center><b>Recipe Books</b></center></h3></div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="martha_cake.jpg">
+      <img src="images/cook_book/martha_cake.jpg" alt="Cook Book" width="600" height="400">
+    </a>
+  <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="holiday_baking.jpg">
+      <img src="images/cook_book/holiday_baking.jpg" alt="Cook Book" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="cookie_book.jpg">
+      <img src="images/cook_book/cookie_book.jpg" alt="Cook Book" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+
+ 
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="caribbean_cooking.jpg">
+      <img src="images/cook_book/caribbean_cooking.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="pastry_chef.jpg">
+      <img src="images/cook_book/pastry_chef.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+  <div class="desc">Available</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="rotisserie.jpg">
+      <img src="images/cook_book/rotisserie.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="arabian_nights.jpg">
+      <img src="images/cook_book/arabian_nights.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="dumplings.jpg">
+      <img src="images/cook_book/dumplings.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+</div> <!--End of Row-->
+<div class="clearfix"></div>
+<br><br>
+
+<!--Novels-->
+<div id="nov">
+<h3 id="myfont" class="hborder"><center><b>Novels</b></center></h3><div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="dangerous_deception.jpg">
+      <img src="images/novel/dangerous_deception.jpg" alt="Dangerous Deception" width="600" height="400">
+    </a>
+  <div class="desc">Available</div>
+
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="lost_in_time.jpg">
+      <img src="images/novel/lost_in_time.jpg" alt="Lost In Time" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="whereever_the_wind_takes_us.jpg">
+      <img src="images/novel/whereever_the_wind_takes_us.jpg" alt="Whereever the Wind Takes Us" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="harry_potter(1).jpg">
+      <img src="images/novel/harry_potter(1).jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="harry_potter(2).jpg">
+      <img src="images/novel/harry_potter(2).jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="secret_history.jpg">
+      <img src="images/novel/secret_history.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="cheetah_girls.jpg">
+      <img src="images/novel/cheetah_girls.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="vanished.jpg">
+      <img src="images/novel/vanished.jpg" alt="Complete Probability and Statistics Vol 2" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+</div><!--End of Row-->
+<div class="clearfix"></div>
+<br><br>
+
+<!--Business-->
+<div id="business">
+<h3 id="myfont" class="hborder"><center><b>Business</b></center></h3></div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="attitude_is_everything.jpg">
+      <img src="images/business/attitude_is_everything.jpg" alt="Attitude is Everything" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="fifteen_secrets_successful.jpg">
+      <img src="images/business/fifteen_secrets_successful.jpg" alt="Fifteen Successful Secrets" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+ 
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="five.levels_of_leadership.jpg">
+      <img src="images/business/five.levels_of_leadership.jpg" alt="Five levels of Leadership" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="ikigai.jpg">
+      <img src="images/business/ikigai.jpg" alt="Ikigai" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+</div><!--End of Row-->
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="make_your_bed.jpg">
+      <img src="images/business/make_your_bed.jpg" alt="Make Your Bed" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="mindset.jpg">
+      <img src="images/business/mindset.jpg" alt="Mindset" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="more_than_a_carpenter.jpg">
+      <img src="images/business/more_than_a_carpenter.jpg" alt="More Than a Carpenter" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="the_power_of_positive_thinking.jpg">
+      <img src="images/business/the_power_of_positive_thinking.jpg" alt="The Power of Positive Thinking" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+</div><!--End of Row-->
+
+<div class="clearfix"></div>
+<br><br>
+
+<!--Religion-->
+<div id="religion">
+<h3 id="myfont" class="hborder"><center><b>Religion</b></center></h3><div>
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="ministry_welfare.jpg">
+      <img src="images/religion/ministry_welfare.jpg" alt="Ministry Welfare" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="principles_for_christian_leaders.jpg">
+      <img src="images/religion/principles_for_christian_leaders.jpg" alt="Principles for Christian Leaders" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="testimonies_of_sabbath.jpg">
+      <img src="images/religion/testimonies_of_sabbath.jpg" alt="Testimonies of Sabbath" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="the_story_of_jesus.jpg">
+      <img src="images/religion/the_story_of_jesus.jpg" alt="The Storyof Jesus" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+</div><!--End of Row-->
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="row">
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="the_story_of_redemption.jpg">
+      <img src="images/religion/the_story_of_redemption.jpg" alt="The Story of Redemption" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="true_revival.jpg">
+      <img src="images/religion/true_revival.jpg" alt="True Revival" width="600" height="400">
+    </a>
+    <div class="desc">Coming soon</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="christian_service.jpg">
+      <img src="images/religion/christian_service.jpg" alt="Christian Service" width="600" height="400">
+    </a>
+    <div class="desc">Available</div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<div class="gallery">
+<a target="_blank" href="from_eternal_past.jpg">
+      <img src="images/religion/from_eternal_past.jpg" alt="From Eternal Past" width="600" height="400">
+    </a>
+   <div class="desc">Available</div>
+</div>
+</div>
+</div>
+</div><!--Closure of Row-->
+
+<div class="clearfix"></div>
+<br><br>
+
+<div class="w3-container w3-green" style="border-style:out-set; border: 5px solid; border-color:gray">
+<h4 style="color:white; font-size:25px">Quick Links</h4>
+
+<div id="space">
+<p style="color:white"><a href="index.html">Home</a></p>
+<p style="color:white"><a href="about_us.html">About Us</a></p>
+<p style="color:white"><a href="library_resources.html">Library Resources</a></p></div>
+<div id="space">
+<p style="color:white"><a href="library_membership.html">Library Membership</a></p>
+<p style="color:white"><a href="library_fees.html">Library Fees</a></p>
+<p style="color:white"><a href="library_contact.html">Library contact</a></p></div>
+</div>
+
+<footer>
+<!--<div class="w3-container w3-green">
+  <h5 align="center">&copy; 2024 Rainbow Readers'Book Hub</h5>
+</div>-->
+
+<div class="w3-container w3-blue" style="border-style:out-set; border: 5px solid; border-color:gray">
+<p style="color:black"; align="center"><i class="fa fa-phone"></i> Contact Me:1(868)-780-8122</p>
+<p style="color:black"; align="center"><i class="fa fa-envelope-o"> email: bobbjanelle@gmail.com</i></p>
+<p align="center"><a href="https://wa.e/18687808122" class="w3-btn w3-gray"><button style="font-size:24px ">Whatsapp <i class="fa fa-whatsapp" style="color:green"></i></button></a></p>
+<p style="color:black"; align="center">&copy; 2024 Rainbow Readers'Book Hub</p>
+
+</body>
+</html>

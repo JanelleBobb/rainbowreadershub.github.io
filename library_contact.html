@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>Rainbow Readers'Book Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Janelle Bobb" content="Library Book Hub">
+<meta name="keywords" content="education, business, cookbook, language, religion, novels">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+div.title{
+  font-family: "Sofia", sans-serif;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  width: 40%;
+  background-color: gray;
+  padding: 20px;
+}
+#logo {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url('shapes_image(1).png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+#space {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+} 
+
+</style>
+</head>
+<body> 
+
+<!--Logo for JCN Library-->
+<div class="w3-container w3-orange">
+<img src="apple_logo.jpg" alt="Logo" width="200" height="200" id= "logo">
+  <h1 align="center" style="font-size:60px"><b>Rainbow Readers'Book Hub</b></h1>
+</div>
+
+ <!--Start Content -->
+
+<div id="Home" class=w3-content">
+<div class="title">
+<!--Navigation Bar -->
+<div class="w3-bar w3-border w3-orange">
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-indigo">Home</a>
+  <a href="about_us.html" class="w3-bar-item w3-button w3-hover-green">About Us</a>
+  <a href="library_resources.html" class="w3-bar-item w3-button w3-hover-blue">Resources</a>
+  <a href="library_membership.html" class="w3-bar-item w3-button w3-hover-teal">Membership</a>
+  <a href="library_fees.html" class="w3-bar-item w3-button w3-hover-aqua">Library Fees</a>
+  <a href="library_contact.html" class="w3-bar-item w3-button w3-hover-deep-orange">Contact Us</a>
+</div>
+</div>
+</div>
+
+
+<p>Click on the image to return Home<a href="index.html"><i class="fa fa-home" style="font-size:60px; color: red;"></i></a></p>
+
+
+
+
+<div class="container">
+
+<h2 style="font-size:30px"><b><center>Contact Form</center></b></h2>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="tele">Telephone Contact</label>
+    <input type="text" id="tele" name="telephone_contact" placeholder="Your telephone contact..">
+   
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email.address" placeholder="Your email address..">
+
+    <label for="comments">Comment(s)</label>
+    <textarea id="text" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+<img src="contact_message.jpg" alt="Contact Message" width="500" height="600" float="right">
+
+</div><br><br>
+<div class="clearfix"></div>
+
+
+<div class="w3-container w3-green" style="border-style:out-set; border: 5px solid; border-color:gray">
+<h4 style="color:white; font-size:25px">Quick Links</h4>
+
+<div id="space">
+<p style="color:white"><a href="index.html">Home</a></p>
+<p style="color:white"><a href="about_us.html">About Us</a></p>
+<p style="color:white"><a href="library_resources.html">Library Resources</a></p></div>
+<div id="space">
+<p style="color:white"><a href="library_membership.html">Library Membership</a></p>
+<p style="color:white"><a href="library_fees.html">Library Fees</a></p>
+<p style="color:white"><a href="library_contact.html">Library contact</a></p></div>
+</div>
+
+<footer>
+<!--<div class="w3-container w3-green">
+  <h5 align="center">&copy; 2024 Rainbow Readers'Book Hub</h5>
+</div>-->
+
+<div class="w3-container w3-blue" style="border-style:out-set; border: 5px solid; border-color:gray">
+<p style="color:black"; align="center"><i class="fa fa-phone"></i> Contact Me:1(868)-780-8122</p>
+<p style="color:black"; align="center"><i class="fa fa-envelope-o"> email: bobbjanelle@gmail.com</i></p>
+<p align="center"><a href="https://wa.e/18687808122" class="w3-btn w3-gray"><button style="font-size:24px ">Whatsapp <i class="fa fa-whatsapp" style="color:green"></i></button></a></p>
+<p style="color:black"; align="center">&copy; 2024 Rainbow Readers'Book Hub</p>
+</div>
+</body>
+</html>
